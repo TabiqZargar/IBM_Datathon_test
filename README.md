@@ -42,13 +42,25 @@ src/
 tests/
   unit/         Vitest component/unit tests
   e2e/          Playwright end-to-end tests
-docs/           Architecture and design documentation
+docs/           Planning docs (challenge brief, idea evaluation, decision log) and architecture
 .github/        CI workflows
 ```
 
 Feature-oriented rule of thumb: a new product capability gets its own `src/features/<name>/`
 folder (components + feature-local logic); only genuinely cross-cutting code belongs in
 `src/lib`, `src/hooks`, or `src/components/ui`.
+
+## Project planning
+
+Discovery and planning documents for Phase 1. Product details remain `[TBD]` until the official
+challenge is received.
+
+| Document                                             | Purpose                                                                                                               |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| [`docs/CHALLENGE_BRIEF.md`](docs/CHALLENGE_BRIEF.md) | Official problem statement, users, impact, judging criteria, IBM requirements, data, team, deadlines, open questions. |
+| [`docs/IDEA_EVALUATION.md`](docs/IDEA_EVALUATION.md) | Evidence-based framework for scoring and comparing candidate ideas.                                                   |
+| [`docs/DECISION_LOG.md`](docs/DECISION_LOG.md)       | Architecture and product decisions with rationale, alternatives, and status.                                          |
+| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)       | System architecture, filled in once the solution is defined.                                                          |
 
 ## Local development
 
@@ -135,5 +147,6 @@ Conventions live in [`.env.example`](.env.example):
 
 ## Status
 
-Scaffold complete; product implementation pending finalization of the challenge. See
-[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+Scaffold complete; product implementation pending finalization of the challenge. Phase 1
+discovery documents are in place (see [Project planning](#project-planning) and
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)). No product features are implemented.
